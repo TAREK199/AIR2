@@ -9,14 +9,16 @@
 <!--        <property name="collaborateur" ref="c"/>-->
 <!--        <property name="periode" ref="p"></property>-->
 <!--    </bean>-->
-<!--    <bean id="c" class="model.Collaborateur" scope="prototype">-->
-<!--        <property name="nom" value="Rebai"/>-->
-<!--        <property name="prenom" value="Tarek"/>-->
-<!--    </bean>-->
-<!--    <bean id="p" class="model.Periode" scope="prototype">-->
-<!--        <property name="dataDebut" value="21-12-2021"/>-->
-<!--        <property name="nbrJours" value="7"/>-->
-<!--    </bean>-->
+    <bean id="c" class="model.Collaborateur" scope="prototype">
+        <constructor-arg index="0" value="Rebai"/>
+        <constructor-arg index="1" value="Tarek"/>
+
+    </bean>
+    <bean id="p" class="model.Periode" scope="prototype">
+        <constructor-arg index="0" value="21-12-2021"/>
+        <constructor-arg index="1" value="7"/>
+
+    </bean>
 
     <!-- Provide support for component scanning -->
     <context:component-scan base-package="*" />

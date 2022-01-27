@@ -5,11 +5,13 @@ public class DemandeConge {
 
     private Collaborateur collaborateur;
     private Periode periode ;
+    private int numero ;
 
-//    public DemandeConge(Collaborateur collaborateur,Periode periode) {
-//        this.collaborateur = collaborateur;
-//        this.periode = periode;
-//    }
+    public DemandeConge(Collaborateur collaborateur,Periode periode,int numero) {
+        this.collaborateur = collaborateur;
+        this.periode = periode;
+        this.numero = numero ;
+    }
 
     @Override
     public String toString() {

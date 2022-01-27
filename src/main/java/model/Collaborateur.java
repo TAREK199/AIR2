@@ -4,10 +4,12 @@ public class Collaborateur {
     private String nom;
     private String prenom;
 
-//    public Collaborateur(String nom, String prenom) {
-//        this.nom = nom;
-//        this.prenom = prenom;
-//    }
+    public Collaborateur(String nom, String prenom) {
+        this.nom = nom;
+        this.prenom = prenom;
+    }
+
+
     @Override
     public String toString() {
         return "model.Collaborateur [nom=" + nom + ", prenom=" + prenom + "]";
